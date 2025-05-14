@@ -22,15 +22,46 @@ const ParallaxText: React.FC = () => {
       }
     };
 
+    const handleMouseEnter = () => {
+      if (textRef.current) {
+        gsap.to(textRef.current, {
+          color: '#ffffff', // brighten on hover
+          opacity: 0.15,     // optional: also increase opacity
+          duration: 0.3,
+          ease: 'power2.out',
+        });
+      }
+    };
+
+    const handleMouseLeave = () => {
+      if (textRef.current) {
+        gsap.to(textRef.current, {
+          color: '#aaaaaa', // return to dimmer gray
+          opacity: 0.05,
+          duration: 0.3,
+          ease: 'power2.out',
+        });
+      }
+    };
+
     window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    const el = textRef.current;
+    el?.addEventListener('mouseenter', handleMouseEnter);
+    el?.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      el?.removeEventListener('mouseenter', handleMouseEnter);
+      el?.removeEventListener('mouseleave', handleMouseLeave);
+    };
   }, []);
 
   return (
     <div
       ref={textRef}
-      className="fixed inset-0 flex items-center justify-center pointer-events-none select-none text-[16vw] font-extrabold text-white opacity-5 z-0"
-    >Localman
+      className="fixed inset-0 flex items-center justify-center pointer-events-auto select-none text-[20vw] font-extrabold text-[#aaaaaa] opacity-5 z-0 transition-colors duration-300"
+    >
+      localman
     </div>
   );
 };
