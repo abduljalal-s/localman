@@ -1,5 +1,5 @@
 import ArtCards from '@/components/ArtCards';
-import Art from '@/components/ArtExplore';
+import Art from '@/components/Explore';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import ParallaxText from '@/components/ParallaxText';
@@ -11,7 +11,6 @@ const HomePage: React.FC = () => {
     <main className="relative min-h-screen bg-black text-white overflow-hidden">
       <Navbar />
       <div className="relative z-10 mt-40 text-center">
-        <h1 className="text-xl font-medium">Welcome To</h1>
       <ParallaxText />  
        <Art/>
        <Hero/>

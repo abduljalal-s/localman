@@ -36,8 +36,8 @@ const ParallaxText: React.FC = () => {
     const handleMouseLeave = () => {
       if (textRef.current) {
         gsap.to(textRef.current, {
-          color: '#aaaaaa', // return to dimmer gray
-          opacity: 0.05,
+          color: '#374151', // return to dimmer gray
+          opacity: 0.19,
           duration: 0.3,
           ease: 'power2.out',
         });
@@ -59,7 +59,7 @@ const ParallaxText: React.FC = () => {
   return (
     <div
       ref={textRef}
-      className="fixed inset-0 flex items-center justify-center pointer-events-auto select-none text-[20vw] font-extrabold text-[#7b7a7a] opacity-5 z-0 transition-colors duration-300 "
+      className="fixed inset-0 flex items-center justify-center pointer-events-auto select-none text-[20vw] font-extrabold text-[#7b7a7a] opacity-5 z-0 transition-colors duration-300 mb-35 -mt-[120px] md:mt-0"
     >
       localman
     </div>

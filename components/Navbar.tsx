@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
           localman
         </div>
 
-        <div className="space-x-6 hidden md:flex text-2xl  font-medium mt-3 ">
+        <div className="space-x-6 hidden md:flex text-2xl  font-bold ">
           <Link href="#" className="hover:text-gray-300 hover:underline decoration-white underline-offset-4 transition-all ">Arts</Link>
           <Link href="/#" className="hover:text-gray-300 hover:underline decoration-white underline-offset-4 transition-all">Explore Arewa</Link>
           <Link href="/#" className="hover:text-gray-300 hover:underline decoration-white underline-offset-4 transition-all">About</Link>
