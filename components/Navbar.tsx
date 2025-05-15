@@ -11,10 +11,15 @@ const Navbar: React.FC = () => {
           localman
         </div>
 
-        <div className="space-x-6 hidden md:flex text-sm font-medium">
-          <Link href="/explore" className="hover:text-gray-300 transition">Explore Arewa</Link>
-          <Link href="/contacts" className="hover:text-gray-300 transition">Contacts</Link>
+        <div className="space-x-6 hidden md:flex text-lg font-medium mt-7">
+          <Link href="/explore" className="hover:text-gray-300 transition">Arts</Link>
+          <Link href="/contacts" className="hover:text-gray-300 transition">Explore Arewa</Link>
           <Link href="/about" className="hover:text-gray-300 transition">About</Link>
+        </div>
+        <div>
+          <Link href="#contact">
+          <button className='ml-4 bg-gray-700 hover:bg-gray-500 text-white font-semibold py-2 px-4 rounded-lg transition duration-200'>Contact Us</button>
+          </Link>
         </div>
 
         {/* Optional: Mobile menu icon */}
