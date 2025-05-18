@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
 
         <div className="space-x-6 hidden md:flex text-2xl  font-bold ">
           <Link href="#" className="hover:text-gray-300 hover:underline decoration-white underline-offset-4 transition-all ">Arts</Link>
-          <Link href="/#" className="hover:text-gray-300 hover:underline decoration-white underline-offset-4 transition-all">Explore Arewa</Link>
+          <Link href="/exploreArewa" className="hover:text-gray-300 hover:underline decoration-white underline-offset-4 transition-all">Explore Arewa</Link>
           <Link href="/#" className="hover:text-gray-300 hover:underline decoration-white underline-offset-4 transition-all">About</Link>
         </div>
       <div className="hidden md:flex">

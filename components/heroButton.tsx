@@ -7,7 +7,7 @@ function Art() {
      <div className=" mt-120 text-center">
         
     <Link href='#artcards' scroll={false}> 
-     <Button variant="outline">Explore</Button>
+     <Button variant="outline">꛷</Button>
     </Link>
      {/* section separation line */}
   <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-white to-transparent my-12" />
